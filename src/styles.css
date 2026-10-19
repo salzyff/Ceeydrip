@@ -4,3 +4,26 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 .post-visual{height:335px;position:relative;display:block;overflow:hidden;background:radial-gradient(ellipse at 50% 32%,#a8946d 0,#736347 24%,#29261f 70%,#161513 100%)}.post-card:nth-child(2) .post-visual{background:radial-gradient(ellipse at 54% 40%,#b99c6b 0,#695638 28%,#332a20 69%,#191714 100%)}.post-card:nth-child(3) .post-visual{background:radial-gradient(ellipse at 48% 36%,#d0bf9d 0,#8e7652 26%,#413526 70%,#191714 100%)}.visual-fallback{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:12px;color:#e5d1a5}.fallback-icon{display:block;font:100px/1 var(--display);text-shadow:0 5px 24px #0009}.fallback-watches{font-size:124px}.fallback-word{font:7px var(--wide);letter-spacing:.36em;opacity:.72}.post-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .45s,opacity .3s;filter:saturate(.78)}.post-visual:hover img{transform:scale(1.04)}.image-placeholder-label{position:absolute;top:12px;left:12px;padding:7px 9px;background:#141310c9;color:#eee3cc;font-size:6px;letter-spacing:.16em}.post-open{position:absolute;right:11px;bottom:11px;padding:9px 11px;background:#12110fd9;color:#f0e8d9;font-size:7px;letter-spacing:.12em}.post-embed,.instagram-media{display:none}
 @media(max-width:640px){.post-visual{height:390px}}
+
+/* Inline SVG icons avoid platform emoji substitutions on iOS. */
+.icon{display:inline-block;width:14px;height:14px;flex:0 0 auto;vertical-align:middle;overflow:visible}
+.button>.icon{width:15px;height:15px}
+.nav-contact>.icon{margin-left:12px;color:var(--gold-bright)}
+.service-star{display:inline-flex;align-items:center;justify-content:center;flex:none}
+.service-star .icon{width:22px;height:22px}
+.floating-label b{display:inline-flex;vertical-align:middle;align-items:center;justify-content:center}
+.floating-label b .icon{width:12px;height:12px}
+.ig-badge>.icon{width:19px;height:19px;color:var(--gold-bright);flex:none}
+.ig-badge small .icon{width:10px;height:10px;margin-left:4px}
+.proof-strip i{display:inline-flex;align-items:center;justify-content:center}
+.proof-strip i .icon{width:11px;height:11px}
+.category-icon .icon{width:48px;height:48px}
+.category-arrow .icon,.outline-link>.icon{width:14px;height:14px}
+.custom-symbol .icon{width:25px;height:25px}
+.custom-aside i .icon,.closing-top i .icon{width:20px;height:20px}
+.post-open .icon{width:11px;height:11px;margin-left:4px}
+.post-details>a .icon{width:13px;height:13px}
+.ig-follow>span b{display:inline-flex;vertical-align:middle}
+.ig-follow>span b .icon,.footer-bottom a .icon{width:11px;height:11px;margin-left:4px}
+.closing-star{width:230px;height:230px}
+.closing-star .icon{width:100%;height:100%}
