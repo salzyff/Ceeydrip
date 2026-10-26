@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ceeydripEmblem from './assets/ceeydrip-emblem.png';
 
 const instagramUrl = 'https://www.instagram.com/ceeydrip/';
 const whatsappUrl = 'https://wa.me/2348168561118';
@@ -29,7 +30,7 @@ const posts = [
 function BrandMark({ small = false }) {
   return (
     <a className={`brand-mark ${small ? 'brand-mark-small' : ''}`} href="#home" aria-label="Ceeydrip Jewelry home">
-      <img src={logoUrl} alt="Ceeydrip Jewelry logo" />
+      <img src={ceeydripEmblem} alt="" aria-hidden="true" />
       <span>CEEYDRIP<small>JEWELRY STORE</small></span>
     </a>
   );

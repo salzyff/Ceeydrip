@@ -27,3 +27,24 @@
 .ig-follow>span b .icon,.footer-bottom a .icon{width:11px;height:11px;margin-left:4px}
 .closing-star{width:230px;height:230px}
 .closing-star .icon{width:100%;height:100%}
+
+/* Use the real gold emblem as a transparent brand mark, not a cropped product photo. */
+.brand-mark{gap:12px;flex-shrink:0}
+.brand-mark img{width:74px;height:32px;object-fit:contain;border:0;border-radius:0;background:transparent;filter:brightness(.78) saturate(.95);flex:none}
+.brand-mark>span{gap:4px;font:600 18px/1 var(--display);letter-spacing:-.035em;color:var(--ink)}
+.brand-mark small{font:600 7px/1.1 var(--wide);letter-spacing:.24em;color:#9b783f}
+.brand-mark-small{gap:9px}
+.brand-mark-small img{width:57px;height:25px}
+.brand-mark-small>span{font-size:15px}
+.footer .brand-mark img{filter:none}
+.footer .brand-mark>span{color:#f0ebe1}
+.footer .brand-mark small{color:#d7b879}
+@media(max-width:640px){
+  .header>.brand-mark{margin-left:auto;margin-right:auto}
+  .brand-mark{gap:8px}
+  .brand-mark img{width:51px;height:24px}
+  .brand-mark>span{font-size:14px;gap:3px}
+  .brand-mark small{font-size:6px;letter-spacing:.17em}
+  .brand-mark-small img{width:51px;height:24px}
+  .brand-mark-small>span{font-size:13px}
+}
